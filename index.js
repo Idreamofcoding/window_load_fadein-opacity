@@ -1,8 +1,6 @@
 // var opacity = 0;
 var intervalID = 0;
 
-// document.getElementById("img1").addEventListener("load", fadeIn);
-
 window.addEventListener("load", fadeIn);
 
 function fadeIn() {
