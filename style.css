@@ -355,12 +355,38 @@ li {
     color: whitesmoke;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: ;
     text-transform: uppercase;
     font-size: 1.5rem;
 }
-
+#simple-social-h3 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
 .simple-social ul {
     -webkit-justify-content: center;
     /* justify-content: center; */
     display: -webkit-flex;
+}
+.simple-social ul li a {
+    color: white;
+}
+.simple-social ul li:nth-child(2) {
+    padding: 0 40px;
+}
+.slider {
+    width: 100%;
+    height: 230px;
+    background-color: #000;
+    display: flex;
+}
+.slider div {
+    width: 230px;
+    height: 230px;
+    background-color: red;
+}
+.slider div:not(:first-child) {
+    width: 230px;
+    height: 230px;
+    margin-left: 10px;
 }
