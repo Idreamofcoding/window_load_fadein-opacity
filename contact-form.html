@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_t3nFbX13MAKY12BvzXcfL");
+        })();
+</script>
+</head>
+<body>
+    <section>
+        <button class="mail__btn click">
+            <i class="fa-solid fa-square-envelope"></i>
+        </button>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title">My Intro</h3>
+                <p class="modal__para">
+                    I am 26 years old. Hobbies include Jiu Jitsu, Working out, & Reading. I love going to Church, there are lots of young adults at my church.
+                </p>
+                <div class="modal__languages">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Chat Me!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I am currently open to new opportunities!
+                </h3>
+                <form action="submit" id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Name</label>
+                        <input type="text" class="input" name="user_name" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Email</label>
+                        <input type="email" class="input" name="user_email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Message</label>
+                        <textarea type="text" class="input" name="message" required></textarea>
+                    </div>
+                    <button class="form__submit" id="contact__submit">Send it My Way</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
